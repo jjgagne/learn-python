@@ -25,3 +25,38 @@ ex5.py:
 - print "If I add %d, %d, and %d, I get %d." % (age, height, weight, age + height + weight) ; number formatter, need () for multiple params
 
 ex6.py:
+- %r is general-purpose / debugging formatter
+- print w + e ; another way of contanetaing strings
+
+ex7.py:
+- print "." * 10 ; prints ..........
+- print "Some text", ; prints without \n (similar to print in other languages)
+- print "Some other text" ; prints with \n (similar to println)
+
+ex9.py:
+- print """
+HOLY CRAP
+THIS IS 2 LINES
+""" ; triple quotation marks is line-entry string
+
+ex11.py:
+- raw_input() grabs user input with no prompt
+- age = int(raw_input()) ; converts user input to integer and stores in age variable
+
+ex12.py:
+- age = raw_input("How old are you? ") ; prompts user for age and stores result in variable
+
+ex13.py:
+- from sys import argv ; import code to allow user to user command line arguments (e.g. python ex13.py arg1 arg2)
+- script, first, second = argv ; unpack command line arguments so we can use their values (e.g. script = ex13.py, first = arg1, second = arg2)
+
+ex15.py:
+- cur_file = open(filename) ; loads file object into cur_file
+- print cur_file.read() ; prints contents of the file
+- cur_file.close() ; closes the file once we're done with it
+- can also grab user input filename with filename = raw_input("> ")
+
+ex16.py:
+- target = open(filename, 'w') ; open file in write mode, which clears file before writing... 'a' for append, 'r' for read also available
+- target.write("some text\n") ; writes text to the file
+

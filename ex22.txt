@@ -1,0 +1,27 @@
+Author: Justin Gagne
+Date: July 4, 2014
+File: ex22.txt
+Description: Review Exercise... Compile a list of all the symbols that have been used previously, and memorize it all.
+
+ex1.py:
+- print "Some text" ; prints string to console
+- # a comment ; denotes a comment in code
+
+ex3.py:
+- + ; addition
+- - ; subtraction
+- * ; multiplication
+- / ; division
+- % ; modulo
+- True/False ; boolean values
+- <, <=, >=, > ; comparison operators
+
+ex4.py:
+- cars = 100 ; variable declaration and assignment
+- print "There are", cars, "available." ; similar to cout << "There are " << cars << " available." in C++
+
+ex5.py:
+- print "Let's talk about %s." % name ; string formatter, %s is replaced by contents of name
+- print "If I add %d, %d, and %d, I get %d." % (age, height, weight, age + height + weight) ; number formatter, need () for multiple params
+
+ex6.py:

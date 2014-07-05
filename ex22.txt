@@ -60,3 +60,23 @@ ex16.py:
 - target = open(filename, 'w') ; open file in write mode, which clears file before writing... 'a' for append, 'r' for read also available
 - target.write("some text\n") ; writes text to the file
 
+ex17.py:
+- from os.path import exists ; import exists, returns True if filename exists, False otherwise
+- indata = open(from_file).read() ; neat trick for copying file contents into a variable without having to close the file manually later
+- len(indata) ; returns length of string
+- open(to_file, 'w').write(indata) ; neat trick for copying string to file without having to close it manually later
+
+ex18.py:
+- def print_two(arg1, arg2):
+      print "arg1: %r, arg2: %r" % (arg1, arg2) ; define a function taking two params; note the def, the colon, and the indentation
+
+ex19.py:
+- cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000) ; calls a function called cheese_and_crackers with var + math params
+
+ex20.py:
+- f.seek(0) ; return to the top of the file (i.e. move the caret to position 0)
+- f.readline() ; reads from current seek position to the next \n character (i.e. reads one line and moves seek to new line)
+- current_line += 1 ; increment current_line by 1
+
+ex21.py:
+- return a + b ; placed in a function with params a and b, will return the value of a + b to the caller of the function (e.g. sum = add(1, 2))
